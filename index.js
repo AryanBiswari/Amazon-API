@@ -4,14 +4,13 @@ const request = require("request-promise");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// const apiKey = "9c277ab6db15fdd2c9fbc13f36550264";
-// const returnScraperApiUrl(api_key) = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
+
 const returnScraperApiUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
 
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  res.send("Welcome to Amazon Scrapper Api.");
+  res.send("Welcome to Amazon Scrapper Api By Aryan.");
 });
 
 //Get Product Details
